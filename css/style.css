@@ -46,7 +46,7 @@ nav,
 .demo-card,
 .planning-box,
 .planning-card,
-.icon-circle {
+.benefit-box {
   border: 2px dashed black;
 }
 
@@ -88,6 +88,12 @@ nav {
 .demo-box {
   padding-top: 2.5rem;
   gap: 2rem;
+}
+
+.demo-card-big {
+  padding: 2.5rem;
+  background-color: #b5ddff;
+  border-radius: 1rem;
 }
 
 .demo-card {
@@ -163,4 +169,43 @@ nav {
 
 .footer-bottom a {
   color: #9792e4;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+  /* DEMO SECTION */
+  .demo-box {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .demo-card-big {
+    width: calc((100% / 1.5) - 0.8rem);
+  }
+
+  .demo-card {
+    width: calc((100% / 3) - 1.4rem);
+  }
+
+  /* TESTIMONIAL SECTION */
+  .testimonial-card {
+    flex-direction: row;
+  }
+
+  /* BENEFIT SECTION */
+  .benefit-box {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefit-card {
+    width: calc((100% / 2) - 1rem);
+  }
+
+  /* ABOUT US SECTION */
+  .about-us-box {
+    flex-direction: row;
+  }
 }
