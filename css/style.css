@@ -9,24 +9,53 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 4rem 2.5rem;
 }
 
-.flex {
+.flex-row {
   display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.font-xl {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.font-xxl {
+  font-size: 4.5rem;
+  font-weight: bold;
 }
 
 nav,
 .nav-left,
 .nav-right,
 .demo-box,
-.demo-card {
+.demo-card,
+.planning-box,
+.planning-card,
+.icon-circle {
   border: 2px dashed black;
 }
+
 /********************* HEADER **********************/
 /* NAV BAR */
 nav {
   background-color: #0084fd;
+  padding: 0 2.5rem;
+  flex-direction: row;
 }
 
 .nav-left {
@@ -54,10 +83,10 @@ nav {
 }
 
 /********************** MAIN ***********************/
+
+/* DEMO SECTION */
 .demo-box {
-  flex-direction: column;
   padding-top: 2.5rem;
-  padding-bottom: 4rem;
   gap: 2rem;
 }
 
@@ -68,6 +97,70 @@ nav {
 }
 
 .demo-img {
-  width: 100%;
+  width: 15rem;
 }
+
+/* PLANNING SECTION */
+.planning-box {
+  gap: 2rem;
+  background-color: #9792e4;
+}
+
+.planning-card {
+  padding: 2.5rem;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+.icon-circle {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  background-color: #9792e4;
+  border-radius: 50%;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-box {
+  gap: 2rem;
+}
+
+.testimonial-card {
+  padding: 2.5rem;
+  border-radius: 3rem;
+  background-color: #9792e4;
+}
+
+/* BENEFIT SECTION */
+.benefit-box {
+  gap: 2rem;
+  background-color: #9792e4;
+}
+
+.benefit-card {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+/* ABOUT US SECTION */
+
 /********************* FOOTER **********************/
+.footer-top {
+  background-color: #9792e4;
+  color: white;
+}
+
+.footer-top a {
+  color: white;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: white;
+}
+
+.footer-bottom a {
+  color: #9792e4;
+}
