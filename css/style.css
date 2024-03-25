@@ -3,12 +3,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body {
-  background-color: #222;
-  color: white;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+nav,
+.nav-left,
+.nav-right,
+.demo-box,
+.demo-card {
+  border: 2px dashed black;
 }
 /********************* HEADER **********************/
+/* NAV BAR */
+nav {
+  background-color: #0084fd;
+}
+
+.nav-left {
+  width: 50%;
+  padding: 1.5rem 0;
+}
+
+.nav-right {
+  width: 50%;
+  text-align: right;
+  margin: auto 0;
+}
+
+.logo {
+  width: 6.5rem;
+}
+
+.nav-link {
+  display: none;
+}
+
+.mobile-menu {
+  color: white;
+  font-size: 2rem;
+}
+
 /********************** MAIN ***********************/
+.demo-box {
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  gap: 2rem;
+}
+
+.demo-card {
+  padding: 2.5rem;
+  background-color: #b5ddff;
+  border-radius: 1rem;
+}
+
+.demo-img {
+  width: 100%;
+}
 /********************* FOOTER **********************/
