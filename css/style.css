@@ -21,12 +21,16 @@
   flex-direction: column;
 }
 
-h3 {
-  font-size: 1.5rem;
+h2 {
+  font-size: 2.3rem;
 }
 
-h2 {
-  font-size: 2.5rem;
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 .font-xl {
@@ -34,20 +38,19 @@ h2 {
   font-weight: bold;
 }
 
-.font-xxl {
-  font-size: 4.5rem;
-  font-weight: bold;
+.purple-btn {
+  background-color: #9792e4;
+  color: white;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border-style: none;
 }
 
-nav,
-.nav-left,
-.nav-right,
-.demo-box,
-.demo-card,
-.planning-box,
-.planning-card,
-.benefit-box {
-  border: 2px dashed black;
+.circled-img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /********************* HEADER **********************/
@@ -60,7 +63,7 @@ nav {
 
 .nav-left {
   width: 50%;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
 }
 
 .nav-right {
@@ -70,7 +73,7 @@ nav {
 }
 
 .logo {
-  width: 6.5rem;
+  width: 6rem;
 }
 
 .nav-link {
@@ -88,54 +91,128 @@ nav {
 .demo-box {
   padding-top: 2.5rem;
   gap: 2rem;
+  line-height: 1.8rem;
 }
 
 .demo-card-big {
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 0 2.5rem;
   background-color: #b5ddff;
   border-radius: 1rem;
+  position: relative;
+  min-height: 47rem;
 }
 
 .demo-card {
   padding: 2.5rem;
   background-color: #b5ddff;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .demo-img {
-  width: 15rem;
+  width: 19rem;
+  position: absolute;
+  bottom: 0;
+  left: 1.9rem;
+}
+
+.demo-box h3 {
+  color: #0084fd;
+  margin: 2rem 0;
+}
+
+.demo-card i {
+  color: #0084fd;
+  font-size: 5rem;
+}
+
+.blue-btn {
+  color: white;
+  background-color: #0084fd;
+  padding: 0.8rem 4rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border-style: none;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-top: 2rem;
 }
 
 /* PLANNING SECTION */
 .planning-box {
   gap: 2rem;
   background-color: #9792e4;
+  line-height: 1.8rem;
 }
 
 .planning-card {
   padding: 2.5rem;
   border-radius: 3rem;
   background-color: white;
+  text-align: center;
 }
 
 .icon-circle {
-  width: 2rem;
-  height: 2rem;
-  text-align: center;
+  width: 3rem;
+  height: 3rem;
   padding-top: 0.3rem;
   background-color: #9792e4;
   border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.fa-arrow-down-long {
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+}
+
+.planning-top {
+  color: white;
+}
+
+.planning-top img {
+  width: 100%;
+}
+
+.planning-top h2 {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.planning-card img {
+  width: 100%;
+}
+
+.planning-card-txt {
+  margin: 1.8rem 0;
 }
 
 /* TESTIMONIAL SECTION */
 .testimonial-box {
   gap: 2rem;
+  text-align: center;
+}
+
+.testimonial-box p {
+  margin: 2rem 0;
+  line-height: 1.8rem;
+}
+
+.testimonial-box h2 {
+  margin: 2.5rem 0;
+  color: #9792e4;
 }
 
 .testimonial-card {
   padding: 2.5rem;
   border-radius: 3rem;
   background-color: #9792e4;
+  color: white;
+}
+
+.quote-icon {
+  font-size: 1.5rem;
 }
 
 /* BENEFIT SECTION */
@@ -144,24 +221,109 @@ nav {
   background-color: #9792e4;
 }
 
+.benefit-box p {
+  line-height: 1.8rem;
+}
+
 .benefit-card {
   padding: 2.5rem;
   border-radius: 1rem;
   background-color: white;
 }
 
+.benefit-box h2 {
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.font-xl,
+.benefit-box h3 {
+  color: #9792e4;
+}
+
+.benefit-box h3 {
+  margin: 1.8rem 0;
+}
+
+.benefit-box .purple-btn {
+  padding: 0.8rem 3.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
 /* ABOUT US SECTION */
+.about-us-txt {
+  margin: 3rem 0;
+  line-height: 2rem;
+}
+
+.about-us-bottom h2 {
+  color: #9792e4;
+  line-height: 3rem;
+  margin: 1.8rem 0;
+}
+
+.about-us-bottom .purple-btn {
+  padding: 0.6rem 1.2rem;
+}
+
+.about-us-img {
+  position: relative;
+}
+
+.quote-icon-big {
+  font-size: 5rem;
+  color: #9792e4;
+  position: absolute;
+  right: 0;
+}
 
 /********************* FOOTER **********************/
+footer {
+  text-align: center;
+}
+
+/* FOOTER TOP */
 .footer-top {
   background-color: #9792e4;
   color: white;
+}
+
+.footer-top h2,
+.footer-top h3,
+.footer-top p {
+  padding: 1rem 0;
+}
+
+.font-xxl {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #fdc15f;
+}
+
+.footer-top-txt {
+  line-height: 2rem;
+}
+
+.footer-top button {
+  color: #9792e4;
+  background-color: white;
+  padding: 1.8rem 5.8rem;
+  font-size: 1.2rem;
+  border-radius: 2.5rem;
+  border-style: none;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem 0;
 }
 
 .footer-top a {
   color: white;
 }
 
+/* FOOTER BOTTOM */
 .footer-bottom {
   background-color: #222;
   color: white;
@@ -169,6 +331,10 @@ nav {
 
 .footer-bottom a {
   color: #9792e4;
+}
+
+.footer-bottom-txt {
+  margin-bottom: 4rem;
 }
 
 /* RESPONSIVE */
