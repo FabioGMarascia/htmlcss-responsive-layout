@@ -9,7 +9,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 2.5rem;
+  padding: 4rem 2rem;
 }
 
 .flex-row {
@@ -22,7 +22,7 @@
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -54,6 +54,7 @@ h4 {
 }
 
 /********************* HEADER **********************/
+
 /* NAV BAR */
 nav {
   background-color: #0084fd;
@@ -99,11 +100,11 @@ nav {
   background-color: #b5ddff;
   border-radius: 1rem;
   position: relative;
-  min-height: 47rem;
+  min-height: 45rem;
 }
 
 .demo-card {
-  padding: 2.5rem;
+  padding: 2rem;
   background-color: #b5ddff;
   border-radius: 1rem;
   text-align: center;
@@ -118,12 +119,13 @@ nav {
 
 .demo-box h3 {
   color: #0084fd;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .demo-card i {
   color: #0084fd;
   font-size: 5rem;
+  margin-bottom: 2rem;
 }
 
 .blue-btn {
@@ -146,10 +148,14 @@ nav {
 }
 
 .planning-card {
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 3rem;
   background-color: white;
   text-align: center;
+}
+
+.planning-card h3 {
+  margin-top: 1.8rem;
 }
 
 .icon-circle {
@@ -165,7 +171,7 @@ nav {
 .fa-arrow-down-long {
   position: absolute;
   top: 1rem;
-  right: 1.1rem;
+  right: 1.12rem;
 }
 
 .planning-top {
@@ -195,7 +201,7 @@ nav {
 }
 
 .testimonial-box p {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   line-height: 1.8rem;
 }
 
@@ -205,7 +211,7 @@ nav {
 }
 
 .testimonial-card {
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 3rem;
   background-color: #9792e4;
   color: white;
@@ -226,7 +232,7 @@ nav {
 }
 
 .benefit-card {
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 1rem;
   background-color: white;
 }
@@ -337,8 +343,11 @@ footer {
   margin-bottom: 4rem;
 }
 
-/* RESPONSIVE */
-@media screen and (min-width: 768px) {
+/********************* RESPONSIVE **********************/
+
+/****** TABLET ******/
+@media screen and (min-width: 700px) {
+  /****** MAIN ******/
   /* DEMO SECTION */
   .demo-box {
     width: 100%;
@@ -348,15 +357,26 @@ footer {
 
   .demo-card-big {
     width: calc((100% / 1.5) - 0.8rem);
+    min-height: 42rem;
   }
 
   .demo-card {
     width: calc((100% / 3) - 1.4rem);
   }
 
+  /* PLANNING SECTION */
+  .planning-top h2 {
+    font-size: 4rem;
+  }
+
   /* TESTIMONIAL SECTION */
   .testimonial-card {
     flex-direction: row;
+    text-align: left;
+  }
+
+  .testimonial-txt {
+    margin-left: 2rem;
   }
 
   /* BENEFIT SECTION */
@@ -373,5 +393,16 @@ footer {
   /* ABOUT US SECTION */
   .about-us-box {
     flex-direction: row;
+    gap: 5rem;
+    padding: 4rem;
+  }
+
+  /****** FOOTER ******/
+  .footer-top-txt {
+    margin: 0 15%;
+  }
+
+  .footer-bottom {
+    padding: 4rem 20%;
   }
 }
