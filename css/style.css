@@ -62,6 +62,11 @@ h4 {
 }
 
 /********************* HEADER **********************/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
 /* NAV BAR */
 nav {
