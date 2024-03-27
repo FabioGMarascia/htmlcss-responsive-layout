@@ -38,8 +38,8 @@ h4 {
   font-weight: bold;
 }
 
-.purple-btn {
-  background-color: #9792e4;
+.purple-btn,
+.blue-btn {
   color: white;
   font-size: 1rem;
   border-radius: 2rem;
@@ -53,6 +53,14 @@ h4 {
   object-fit: cover;
 }
 
+.violet {
+  color: #9792e4;
+}
+
+.violet-back {
+  background-color: #9792e4;
+}
+
 /********************* HEADER **********************/
 
 /* NAV BAR */
@@ -62,6 +70,7 @@ nav {
 }
 .nav-container {
   padding: 0 2rem;
+  flex-direction: row;
 }
 
 .nav-left {
@@ -131,12 +140,8 @@ nav {
 }
 
 .blue-btn {
-  color: white;
   background-color: #0084fd;
   padding: 0.8rem 3.5rem;
-  font-size: 1rem;
-  border-radius: 2rem;
-  border-style: none;
   letter-spacing: 0.1rem;
   font-weight: bold;
   margin-top: 2rem;
@@ -145,7 +150,6 @@ nav {
 /* PLANNING SECTION */
 .planning-box {
   gap: 2rem;
-  background-color: #9792e4;
   line-height: 1.8rem;
 }
 
@@ -164,7 +168,6 @@ nav {
   width: 3rem;
   height: 3rem;
   padding-top: 0.3rem;
-  background-color: #9792e4;
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
@@ -213,13 +216,11 @@ nav {
 
 .testimonial-box h2 {
   margin: 2.5rem 0;
-  color: #9792e4;
 }
 
 .testimonial-card {
   padding: 2rem;
   border-radius: 3rem;
-  background-color: #9792e4;
   color: white;
 }
 
@@ -228,10 +229,6 @@ nav {
 }
 
 /* BENEFIT SECTION */
-.benefit-box {
-  background-color: #9792e4;
-}
-
 .benefit-box .container {
   gap: 2rem;
 }
@@ -252,11 +249,6 @@ nav {
   text-align: center;
 }
 
-.font-xl,
-.benefit-box h3 {
-  color: #9792e4;
-}
-
 .benefit-box h3 {
   margin: 1.8rem 0;
 }
@@ -275,7 +267,6 @@ nav {
 }
 
 .about-us-bottom h2 {
-  color: #9792e4;
   line-height: 3rem;
   margin: 1.8rem 0;
 }
@@ -290,7 +281,6 @@ nav {
 
 .quote-icon-big {
   font-size: 5rem;
-  color: #9792e4;
   position: absolute;
   right: 0;
 }
@@ -302,7 +292,6 @@ footer {
 
 /* FOOTER TOP */
 .footer-top {
-  background-color: #9792e4;
   color: white;
 }
 
@@ -323,7 +312,6 @@ footer {
 }
 
 .footer-top button {
-  color: #9792e4;
   background-color: white;
   padding: 1.8rem 5.8rem;
   font-size: 1.2rem;
@@ -345,15 +333,11 @@ footer {
   padding: 2rem;
 }
 
-.footer-bottom a {
-  color: #9792e4;
-}
-
 .footer-bottom-txt {
   margin-bottom: 4rem;
 }
 
-.footer-container{
+.footer-container {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
@@ -417,13 +401,13 @@ footer {
     margin: 0 20%;
   }
 
-  .footer-container{
+  .footer-container {
     width: 500px;
   }
+}
 
 /****** DESKTOP ******/
 @media screen and (min-width: 1140px) {
-
   /****** COMMON ******/
   .container {
     width: 1140px;
@@ -452,7 +436,7 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
   }
-  
+
   .nav-container {
     width: 1140px;
     padding: 0 2rem;
@@ -490,6 +474,7 @@ footer {
   .planning-top h2 {
     font-size: 2rem;
   }
+
   .planning-top {
     width: 50%;
   }
@@ -499,6 +484,7 @@ footer {
     width: 50%;
     margin-top: 7.5rem;
   }
+
   .planning-card img {
     width: 70%;
   }
